@@ -1,3 +1,3 @@
 # wfc3-telemetry
 
-Records the various WFC3 telemetry parameters at given MJDs and searches for correlations with these parameters.
+Searches for correlations with the various WFC3 telemetery parameters.
