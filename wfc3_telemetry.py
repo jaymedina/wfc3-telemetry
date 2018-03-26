@@ -38,12 +38,16 @@ Notes
 import glob
 import os
 
+from astropy.coordinates import get_sun
 from astropy.io import fits
+from astropy.time import Time
 from bisect import bisect
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
 # -----------------------------------------------------------------------------
+
 def distcorr(X, Y):
     """ Compute the distance correlation function
     
@@ -73,6 +77,48 @@ def distcorr(X, Y):
     dcov2_yy = (B * B).sum()/float(n * n)
     dcor = np.sqrt(dcov2_xy)/np.sqrt(np.sqrt(dcov2_xx) * np.sqrt(dcov2_yy))
     return dcor
+
+# -----------------------------------------------------------------------------
+
+def dra_hst_sun(mjd):
+    mjd = Time(mjd, format='mjd')
+
+    # get sun position at this mjd
+    sun_pos = get_sun(mjd)
+    sun_ra = sun_pos.ra.deg
+    sun_dec = sun_pos.dec.deg
+
+    # get HST lat/long info
+    hst = fits.getdata('HST_SubEarth.fits', 1)
+    hst_mjd = hst.mjd
+    hst_lat = hst.sublat
+    hst_long =hst.sublng
+    
+    # get HST position at this mjd (using closest matching HST entry)
+    first = hst_mjd[bisect(hst_mjd, mjd.value)]
+    last = hst_mjd[bisect(hst_mjd, mjd.value) - 1]
+    if abs(first-mjd.value) < abs(last-mjd.value):
+        closest_mjd = first
+    else:
+        closest_mjd = last
+    pos = float(hst_long[hst_mjd==closest_mjd])
+
+    # turn position into hst ra: RA = GMST + long
+    gst = mjd.sidereal_time('mean', 'greenwich').value
+    hst_ra = pos + gst*15
+    if hst_ra < 0:
+        hst_ra += 360
+    if hst_ra > 360:
+        hst_ra -= 360
+
+    # delta_ra [HST - Sun]
+    dra = hst_ra - sun_ra
+    if dra < -180:
+        dra += 360
+    if dra > 180:
+        dra -= 360
+
+    return dra
 
 # -----------------------------------------------------------------------------
 
@@ -123,7 +169,27 @@ def find_correlations(t):
     t_out['param'] = t.columns
     t_out['R'] = cor_linear
     t_out['d'] = cor_dist
+    t_out = t_out.sort_values('R', ascending=False).reset_index(drop=True)
     t_out.to_csv('correlations.txt', index=False)
+
+    # Calculate the correlation matrix using the top 40 correlations with param
+    t_top = t_out[0:40]
+    names = list(t_top.columns)
+    correlations = t_top.corr()
+
+    # Plot the correlation matrix
+    fig = plt.figure()
+    ax = fig.add_axes([0,0,2,2])
+    cax = ax.matshow(correlations, vmin=-1, vmax=1, cmap='coolwarm')
+    fig.colorbar(cax, label='Pearson Correlation Coefficient', pad=.04)
+    ticks = np.arange(0, len(names), 1)
+    ax.set_xticks(ticks)
+    ax.set_yticks(ticks)
+    ax.set_xticklabels(names, rotation=90)
+    ax.set_yticklabels(names)
+
+    # Save the correlation matrix
+    fig.savefig('correlation_matrix.png', bbox_inches='tight', dpi=200)
 
 # -----------------------------------------------------------------------------
 
@@ -165,19 +231,25 @@ def get_telemetry(t):
                 data = pd.read_csv(f, names=['mjd', 'param', 'param_extra'], 
                                    header=None, delim_whitespace=True)
 
-            # Find the matching parameter value for each dark
+            # Find the matching parameter value for each MJD of interest
             def match(mjd):
                 return data['param'][bisect(data['mjd'], mjd) - 1]
 
             matching_param = [match(mjd) for mjd in t['mjd']]
 
-            # Add these values to the master text file
+            # Add these values to the table
             t[param] = matching_param
         
         # tracker
         if i%10==0:
             print(str(i) + '/' + str(len(hst_telemetry_files)) + ' complete.')
 
+    # Add difference in RA between HST and the Sun at MJDs to the table
+    print('Finding difference in RA between HST and Sun at MJDs.')
+    dras = [dra_hst_sun(mjd) for mjd in t['mjd']]
+    t['dra_hst_sun'] = dras
+
+    # Write out the final telemetry table
     t.to_csv('telemetry_table.txt', index=False)
 
 # -----------------------------------------------------------------------------
