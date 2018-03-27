@@ -38,13 +38,16 @@ Notes
 import glob
 import os
 
+import argparse
 from astropy.coordinates import get_sun
 from astropy.io import fits
+from astropy.table import Table
 from astropy.time import Time
 from bisect import bisect
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+from scipy.spatial.distance import pdist, squareform
 
 # -----------------------------------------------------------------------------
 
@@ -81,6 +84,19 @@ def distcorr(X, Y):
 # -----------------------------------------------------------------------------
 
 def dra_hst_sun(mjd):
+    """
+    Finds the difference in RA between HST and the Sun at a given MJD.
+
+    Parameters
+    ----------
+    mjd : float
+        The MJD of interest.
+
+    Returns
+    -------
+    dra : float
+        The difference in RA between HST and the Sun at the given MJD.
+    """
     mjd = Time(mjd, format='mjd')
 
     # get sun position at this mjd
@@ -152,30 +168,36 @@ def find_correlations(t):
         # Find the correlation coefficients
         try:
             c = t[p].corr(t['param'])
-            cor_linear.append(c)
+            cor_linear.append(c.round(3))
             d = distcorr(t['param'], t[p])
-            cor_dist.append(d)
+            cor_dist.append(d.round(3))
         except TypeError:
             # transform unique strings to unique ints
             u, indices = np.unique(t[p], return_inverse=True)
             df = pd.DataFrame({'indices': indices}) 
             c = df['indices'].corr(t['param'])
-            cor_linear.append(c)
-            d = distcorr(t['param'], t['indices'])
-            cor_dist.append(d)
+            cor_linear.append(c.round(3))
+            d = distcorr(t['param'], df['indices'])
+            cor_dist.append(d.round(3))
 
     # Write out a summary table of the correlations
     t_out = pd.DataFrame({})
     t_out['param'] = t.columns
     t_out['R'] = cor_linear
     t_out['d'] = cor_dist
-    t_out = t_out.sort_values('R', ascending=False).reset_index(drop=True)
-    t_out.to_csv('correlations.txt', index=False)
+    t_out = t_out.fillna(0) # replace nans with zero
+    t_out['R_abs'] = abs(t_out['R']) # sort by magnitude of correlation
+    t_out = t_out.sort_values('R_abs', ascending=False).reset_index(drop=True)
+    t_out = t_out.drop('R_abs', axis=1)
+    t2_out = Table.from_pandas(t_out)
+    t2_out.write('correlations.txt', format='ascii.fixed_width_two_line', 
+                 overwrite=True)
 
     # Calculate the correlation matrix using the top 40 correlations with param
-    t_top = t_out[0:40]
-    names = list(t_top.columns)
+    names = list(t_out[0:41]['param'].values)
+    t_top  = t[names].copy()
     correlations = t_top.corr()
+    correlations = correlations.fillna(0) # replace nans with zero
 
     # Plot the correlation matrix
     fig = plt.figure()
@@ -187,9 +209,12 @@ def find_correlations(t):
     ax.set_yticks(ticks)
     ax.set_xticklabels(names, rotation=90)
     ax.set_yticklabels(names)
+    ax.set_xlim(-0.5, len(names)-1.5)
+    ax.set_ylim(len(names)-1.5, -0.5)
 
     # Save the correlation matrix
-    fig.savefig('correlation_matrix.png', bbox_inches='tight', dpi=200)
+    fig.savefig('correlation_matrix.png', bbox_inches='tight', dpi=200,
+                overwrite=True)
 
 # -----------------------------------------------------------------------------
 
@@ -218,6 +243,7 @@ def get_telemetry(t):
     for i,f in enumerate(hst_telemetry_files):
         # Read in the telemetry parameter data
         param = os.path.basename(f)
+        print('Finding matching {} entries'.format(param))
 
         if not param == 'I542_6month': # this is just a subset of I542
             data = pd.read_csv(f, names=['mjd', 'param'], header=None, 
@@ -246,8 +272,11 @@ def get_telemetry(t):
 
     # Add difference in RA between HST and the Sun at MJDs to the table
     print('Finding difference in RA between HST and Sun at MJDs.')
-    dras = [dra_hst_sun(mjd) for mjd in t['mjd']]
-    t['dra_hst_sun'] = dras
+    try:
+        dras = [dra_hst_sun(mjd) for mjd in t['mjd']]
+        t['dra_hst_sun'] = dras
+    except IndexError:
+        pass
 
     # Write out the final telemetry table
     t.to_csv('telemetry_table.txt', index=False)
