@@ -158,8 +158,10 @@ def find_correlations(t):
         with the parameter of interest.
     """
 
-    # Read in the data
+    # Read in the telemetry table and telemetry descriptions table
     t = pd.read_csv(t)
+    tel = Table.read('wfc3_telemetry.txt', 
+                     format='ascii.fixed_width_two_line').to_pandas()
 
     # Record the linear and non-linear correlations with the parameter
     cor_linear = []
@@ -180,7 +182,7 @@ def find_correlations(t):
             d = distcorr(t['param'], df['indices'])
             cor_dist.append(d.round(3))
 
-    # Write out a summary table of the correlations
+    # Make a summary table of the correlations
     t_out = pd.DataFrame({})
     t_out['param'] = t.columns
     t_out['R'] = cor_linear
@@ -189,13 +191,44 @@ def find_correlations(t):
     t_out['R_abs'] = abs(t_out['R']) # sort by magnitude of correlation
     t_out = t_out.sort_values('R_abs', ascending=False).reset_index(drop=True)
     t_out = t_out.drop('R_abs', axis=1)
+
+    # Add telemetry descriptions/units to this table
+    desc = []
+    units = []
+    mnemonic = []
+
+    for i,p in enumerate(t_out['param']):
+        d = tel['Description'][tel['MSID']==t_out['param'][i]]
+        u = tel['Units'][tel['MSID']==t_out['param'][i]]
+        m = tel['Mnemonic'][tel['MSID']==t_out['param'][i]]
+        try:
+            desc.append(d.values[0])
+            units.append(u.values[0])
+            mnemonic.append(m.values[0])
+        except IndexError:
+            desc.append('-')
+            units.append('-')
+            mnemonic.append('-')
+        
+    t_out['Mnemonic'] = mnemonic
+    t_out['Description'] = desc
+    t_out['Units'] = units
+    
+    # Write out the correlation summary table
     t2_out = Table.from_pandas(t_out)
     t2_out.write('correlations.txt', format='ascii.fixed_width_two_line', 
                  overwrite=True)
 
-    # Calculate the correlation matrix using the top 40 correlations with param
+    # Find the top 40 correlations with param, not including string units
+    t_nostrings = t.select_dtypes(exclude=['object'])
     names = list(t_out[0:41]['param'].values)
-    t_top  = t[names].copy()
+    names_nostrings = []
+    for n in names:
+        if n in list(t_nostrings.columns):
+            names_nostrings.append(n)
+    t_top  = t[names_nostrings].copy()
+
+    # Calculate the correlation matrix
     correlations = t_top.corr()
     correlations = correlations.fillna(0) # replace nans with zero
 
@@ -204,13 +237,11 @@ def find_correlations(t):
     ax = fig.add_axes([0,0,2,2])
     cax = ax.matshow(correlations, vmin=-1, vmax=1, cmap='coolwarm')
     fig.colorbar(cax, label='Pearson Correlation Coefficient', pad=.04)
-    ticks = np.arange(0, len(names), 1)
+    ticks = np.arange(0, len(names_nostrings), 1)
     ax.set_xticks(ticks)
     ax.set_yticks(ticks)
-    ax.set_xticklabels(names, rotation=90)
-    ax.set_yticklabels(names)
-    ax.set_xlim(-0.5, len(names)-1.5)
-    ax.set_ylim(len(names)-1.5, -0.5)
+    ax.set_xticklabels(names_nostrings, rotation=90)
+    ax.set_yticklabels(names_nostrings)
 
     # Save the correlation matrix
     fig.savefig('correlation_matrix.png', bbox_inches='tight', dpi=200,

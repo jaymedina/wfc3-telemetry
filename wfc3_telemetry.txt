@@ -1,0 +1,739 @@
+  Mnemonic MSID                                                      Description                    Units
+---------- ---- ---------------------------------------------------------------- ------------------------
+   IRIUAON I001                                       Remote Interface Unit A On             Relay Status
+   IRIUBON I002                                       Remote Interface Unit B On             Relay Status
+  IRIUATMP I003                                   Remote Interface Unit (RIU) A           Temperature (C)
+  IRIUBTMP I004                                   Remote Interface Unit (RIU) B           Temperature (C)
+    IASCS4 I005                                Aft Shroud Cooling System Spare 4                    Spare
+  IFSWMODE I006                                             Flight Software Mode                        -
+   IFTIMEH I007                                     Flight Software Time Hi Bits                     Bits
+  IBADMDCT I008                                                 Bad Mode Counter                   Counts
+    IASCS2 I009                                Aft Shroud Cooling System Spare 2                    Spare
+    IASCS3 I010                                Aft Shroud Cooling System Spare 3                        -
+   ICCMDCT I011              Communication Application Processor Command Counter                   Counts
+   IFTIMEL I012                                    Flight Software Time Low Bits                     Bits
+  ILMNFRCT I013                                         Last Minor Frame Counter                   Counts
+  ISUSTATE I014                                                    Suspend State                        -
+    IRESET I015                                                 Reason For Reset                    Reset
+  ICLRQFLG I016                                            Clear All Queues Flag                        -
+  IFCKSMFL I017                                    Flight Software Checksum Flag                        -
+    IMFAIL I018                                         Minor Frame Fail Counter                        -
+   IMCMDCT I019                NSSCI Macro Application Processor Command Counter                   Counts
+  IFBDMDCT I020                                 Flight Software Bad Mode Counter                   Counts
+    IASCS1 I021                                Aft Shroud Cooling System Spare 1                        -
+  IMINFRCT I022                                              Minor Frame Counter                   Counts
+  IFLVMODE I023                               Flight Software Last Value Of Mode                        -
+   IFMFAIL I024                         Flight Software Minor Frame Fail Counter                   Counts
+  IFBUFILL I025                                           Fill Buffer Fill Index                        -
+  ICKSMIND I026                                               Checksum Indicator                        -
+   IASCS30 I027                               Aft Shroud Cooling System Spare 30                    Spare
+   IASCS19 I028                               Aft Shroud Cooling System Spare 19                        -
+   IASCS20 I029                               Aft Shroud Cooling System Spare 20                    Spare
+   IASCS21 I030                               Aft Shroud Cooling System Spare 21                        -
+   IASCS34 I031                               Aft Shroud Cooling System Spare 34                    Spare
+   IASCS31 I032                               Aft Shroud Cooling System Spare 31                        -
+   IASCS29 I033                               Aft Shroud Cooling System Spare 29                        -
+   IASCS24 I034                               Aft Shroud Cooling System Spare 24                    Spare
+   IASCS14 I035                               Aft Shroud Cooling System Spare 14                    Spare
+   IASCS33 I036                               Aft Shroud Cooling System Spare 33                        -
+   IASCS26 I037                               Aft Shroud Cooling System Spare 26                    Spare
+   IASCS25 I038                               Aft Shroud Cooling System Spare 25                        -
+   IASCS32 I039                               Aft Shroud Cooling System Spare 32                    Spare
+   IASCS23 I040                               Aft Shroud Cooling System Spare 23                        -
+   IASCS22 I041                               Aft Shroud Cooling System Spare 22                    Spare
+   IASCS15 I042                               Aft Shroud Cooling System Spare 15                        -
+   IASCS13 I043                               Aft Shroud Cooling System Spare 13                        -
+   IASCS12 I044                               Aft Shroud Cooling System Spare 12                    Spare
+   IASCS11 I045                               Aft Shroud Cooling System Spare 11                        -
+   IASCS10 I046                               Aft Shroud Cooling System Spare 10                    Spare
+    IASCS9 I047                                Aft Shroud Cooling System Spare 9                        -
+    IASCS8 I048                                Aft Shroud Cooling System Spare 8                    Spare
+    IASCS7 I049                                Aft Shroud Cooling System Spare 7                        -
+    IASCS6 I050                                Aft Shroud Cooling System Spare 6                    Spare
+    IASCS5 I051                                Aft Shroud Cooling System Spare 5                        -
+   IASCS28 I052                               Aft Shroud Cooling System Spare 28                    Spare
+   IASCS27 I053                               Aft Shroud Cooling System Spare 27                        -
+   IASCS16 I054                               Aft Shroud Cooling System Spare 16                    Spare
+   IASCS17 I055                               Aft Shroud Cooling System Spare 17                        -
+   IASCS18 I056                               Aft Shroud Cooling System Spare 18                    Spare
+   ISDF2AB I061                      Science Data Formatter Interface A/B Side 2                        -
+   I15VMEC I062                 Support Electronics Section +15V Mechanism Power              Voltage (V)
+   ISDF1AB I063                     Science Data Formatter Interface A/B Side 1                         -
+   IMEB1ET I064                                 Main Electronics Box 1 End Wall           Temperature (C)
+  IMEB1HPT I065                                Main Electronics Box 1 Heat Pipe           Temperature (C)
+  IMEB2HPT I066                                Main Electronics Box 2 Heat Pipe           Temperature (C)
+    ICSTMP I067                                           Control Section Board           Temperature (C)
+   IMEB2ET I068                                 Main Electronics Box 2 End Wall           Temperature (C)
+    I5VMEC I069                  Support Electronics Section +5V Mechanism Power              Voltage (V)
+    IERCST I070                           Electronics Radiator Condensor Saddle           Temperature (C)
+   I30VMEC I071                 Support Electronics Section +30V Mechanism Power              Voltage (V)
+   IMEB2ST I074                                Main Electronics Box 2 Side Wall           Temperature (C)
+  IUFOCPOS I075          UVIS Corrector Focus Corrected Position (from IUFOCLVT)   Corrected LVDT Reading
+   IMEB1ST I076                                Main Electronics Box 1 Side Wall           Temperature (C)
+  IM1CONDT I077                       Main Electronics Box 1 Condensor Radiator           Temperature (C)
+  IWINHTP1 I080                                  UVIS Window Heater Power Side 1                        -
+  IWINHTP2 I081                                  UVIS Window Heater Power Side 2                        -
+  IUVTECI2 I082                        UVIS Thermo-Electric Cooler Input Current              Current (A)
+  ICETECP1 I083            IR Cold Enclosure Thermo-Electric Cooler Relay Side 1             Relay Status
+    I5VOP2 I084                             Operate Bus +5VDC Regulator (Side 2)              Voltage (V)
+  IHOLDON2 I085                           Low Voltage Power Supply Hold On Power             Relay Status
+    I5VOP1 I086                             Operate Bus +5VDC Regulator (Side 1)              Voltage (V)
+   I28VIN2 I087                Spacecraft +28V Input to Low Voltage Power Supply              Voltage (V)
+  IOPERON2 I088                                 Low Voltage Power Supply Operate             Relay Status
+   I28VIN1 I089       Spacecraft +28V Input to Low Voltage Power Supply (Side 1)              Voltage (V)
+  ICETECP2 I090            IR Cold Enclosure Thermo-Electric Cooler Relay Side 2             Relay Status
+  IHOLDON1 I091                    Low Voltage Power Supply Hold On Power Side 1             Relay Status
+  ICEBPWR1 I092                            UVIS CCD Electronics Box Power Side 1             Relay Status
+  IOPERON1 I093                          Low Voltage Power Supply Operate Side 1             Relay Status
+  ITOTALI1 I094            Total Low Voltage Power Supply Input Current (Side 1)              Current (A)
+  IUVTECI1 I095               UVIS Thermo-Electric Cooler Input Current (Side 1)              Current (A)
+  ICEBPWR2 I096                                   UVIS CCD Electronics Box Power             Relay Status
+  ITOTALI2 I097                     Total Low Voltage Power Supply Input Current              Current (A)
+   I5VHLD2 I098                                                   Hold Bus +5VDC              Voltage (V)
+  I15VHLD2 I099                                                  Hold Bus +15VDC              Voltage (V)
+  I15VHLD1 I100                                         Hold Bus +15VDC (Side 1)              Voltage (V)
+   I5VHLD1 I101                                          Hold Bus +5VDC (Side 1)              Voltage (V)
+  IM15VHD2 I102                                                  Hold Bus -15VDC              Voltage (V)
+  IM15VHD1 I103                                         Hold Bus -15VDC (Side 1)              Voltage (V)
+  ILVPS2ET I104                             Low Voltage Power Supply 2 End Wall           Temperature (C)
+  ILVPS1ET I105                             Low Voltage Power Supply 1 End Wall           Temperature (C)
+  IDRTCET1 I106                     IR TECFIRE (CE) Heat Pipe Condensor (Side 1)              Delta-T (C)
+  ITCESET1 I107                     IR TEC Cold Enclosure (CE) Setpoint (Side 1) Setpoint Temperature (C)
+    ICPSET I108                        Optical Bench Cold Plate Heater Setpoint           Temperature (C)
+  IUSHSET2 I109                                   UVIS Shield Current Setpoint 2     Setpoint Current (A)
+   IM15VOP I110                                     Operate Bus -15VDC Regulator              Voltage (V)
+    IREST1 I111                  VHCP Evaporator Saddle Heater Setpoint (Side 1)          Temperature (C)
+    IREST2 I112                           VHCP Evaporator Saddle Heater Setpoint          Temperature (C)
+   IRESSET I113         Variable Conductance Heat Pipe Reservoir Heater Setpoint          Temperature (C)
+  ILVPS4T2 I114                                Low Voltage Power Supply Board 4           Temperature (C)
+    I15VOP I115                                     Operate Bus +15VDC Regulator              Voltage (V)
+  ITDBSET1 I116                  IR TECFIRE Detector Base (DB) Setpoint (Side 1) Setpoint Temperature (C)
+  IDBTECI2 I117                  IR Detector Base Thermo-Electric Cooler Current              Current (A)
+  IDBTECI1 I118         IR Detector Base Thermo-Electric Cooler Current (Side 1)              Current (A)
+  IRDETMP1 I119                                             IR Detector (Side 1)          Temperature (C)
+  ICETECI2 I120                          TECFIRE Cold Enclosure (CE) TEC Current              Current (A)
+  ICETECI1 I121                 TECFIRE Cold Enclosure (CE) TEC Current (Side 1)              Current (A)
+   IRTECI2 I122             IR Detector TEC Current (Low Voltage Power Supply 2)              Current (A)
+     I5VOP I123                                      Operate Bus +5VDC Regulator              Voltage (V)
+  IRDETMP2 I124                                                     IR Detector           Temperature (C)
+   IRTECI1 I125             IR Detector TEC Current (Low Voltage Power Supply 1)              Current (A)
+  IRTCSET1 I126                                 IR 6-Stage TEC Setpoint (Side 1)          Temperature (C)
+  IDEBPWR2 I127                IR Detector Electronics Board Power Status Side 2             Relay Status
+  IUDETMP2 I128                                                   UVIS Detector           Temperature (C)
+  IUDETMP1 I129                                           UVIS Detector (Side 1)          Temperature (C)
+  IMECPWR2 I130                         Low Voltage Power Supply Mechanism Power             Relay Status
+  IMECPWR1 I131                  Low Voltage Power Supply Mechanism Power Side 1             Relay Status
+  ILMPPWR2 I132                              Low Voltage Power Supply Lamp Power             Relay Status
+  ITDBSET2 I133                           IR TECFIRE Detector Base (DB) Setpoint Setpoint Temperature (C)
+  ILMPPWR1 I134                       Low Voltage Power Supply Lamp Power Side 1             Relay Status
+  IUTCSET1 I135                                 UVIS Cold Side Setpoint (Side 1)          Temperature (C)
+  IUTCSET2 I136                                         UVIS Cold Side Setpoint           Temperature (C)
+  IRTCSET2 I137                                         IR 6-Stage TEC Setpoint           Temperature (C)
+  IUTCPWR1 I138                      UVIS 4-Stage Thermo-Electric Cooler Power 1                        -
+   IHCPWR2 I139                                             Heater Control Power             Relay Status
+  IRCEHTP1 I140                                 IR Cold Enclosure Heater Power 1             Relay Status
+  IDRTCET2 I141                              IR TECFIRE (CE) Heat Pipe Condensor              Delta-T (C)
+   IRENCT2 I142                                          IR Cold Enclosure (CE)           Temperature (C)
+   IRENSET I143                                 IR Cold Enclosure (CE) Setpoint           Temperature (C)
+  IDRTDBT1 I144                     IR TECFIRE (DB) Heat Pipe Condensor (Side 1)          Temperature (C)
+  ITCESET2 I145                              IR TEC Cold Enclosure (CE) Setpoint Setpoint Temperature (C)
+   IRENCT1 I146                                  IR Cold Enclosure (CE) (Side 1)          Temperature (C)
+  IRSHLDT2 I147                                                       IR Shield           Temperature (C)
+  IRSHLDT1 I148                                               IR Shield (Side 1)          Temperature (C)
+  IUTCPWR2 I149                      UVIS 4-Stage Thermo-Electric Cooler Power 2                        -
+   IHCPWR1 I150                                      Heater Control Power Side 1             Relay Status
+  IENHTON2 I151                                 IR Enclosure Heater Relay Side 2             Relay Status
+   IWINSET I152                                     UVIS Window Heater Setpoint           Temperature (C)
+  IDRTDBT2 I153                              IR TECFIRE (DB) Heat Pipe Condensor          Temperature (C)
+  IRTCPWR1 I154                        IR 6-Stage Thermo-Electric Cooler Power 1             Relay Status
+  ILVPS4T1 I155                        Low Voltage Power Supply Board 4 (Side 1)          Temperature (C)
+  IRTCPWR2 I156                        IR 6-Stage Thermo-Electric Cooler Power 2             Relay Status
+  IRCEHTP2 I157                                 IR Cold Enclosure Heater Power 2             Relay Status
+   IRRAMPT I158                                         IR Ramp Setpoint Monitor          Temperature (C)
+  IDEBPWR1 I159                IR Detector Electronics Board Power Status Side 1             Relay Status
+  IUVWINT2 I160                                              UVIS Window Heater           Temperature (C)
+  IANNPWR1 I161                                        Anneal Power Relay Side 1             Relay Status
+  IUVWINT1 I162                                      UVIS Window Heater (Side 1)          Temperature (C)
+  IANNPWR2 I163                                        Anneal Power Relay Side 2             Relay Status
+  IENHTON1 I164                                 IR Enclosure Heater Relay Side 1             Relay Status
+  ILVPS1ST I165                            Low Voltage Power Supply 1 Side Wall           Temperature (C)
+  ILVPS2ST I166                            Low Voltage Power Supply 2 Side Wall           Temperature (C)
+  IWNHTON1 I167                                     UVIS Window Heater On Side 1                        -
+  IWNHTON2 I168                                     UVIS Window Heater On Side 2                        -
+   ISHLDT1 I171                                             UVIS Shield (Side 1)          Temperature (C)
+  ISHTECP2 I172                       UVIS Shield Thermo-Electric Cooler Power 2             Relay Status
+  ISHTECI2 I173                       UVIS Shield Thermo-Electric Cooler Current              Current (A)
+  ISHTECP1 I174                       UVIS Shield Thermo-Electric Cooler Power 1             Relay Status
+  ISHTECI1 I175              UVIS Shield Thermo-Electric Cooler Current (Side 1)              Current (A)
+  IUVHOUST I176                                                    UVIS Housing           Temperature (C)
+  IDRUVCST I177                                  UVIS Radiator Condensor Saddle           Temperature (C)
+  IUVDETMP I178                                        UVIS CCD Monitored by SES          Temperature (C)
+  IUBINRAT I179                                           UVIS CCD Binning Ratio                        -
+  IRREADCT I180                                                  IR Read Counter                   Counts
+  IROBSCTR I181                                           IR Observation Counter                   Counts
+  IRNREADS I182                                               IR Number Of Reads                    Reads
+  IRHOUSET I201                                             IR Detector Housing           Temperature (C)
+    ICEBST I202                             CCD Electronics Box (CEB) Side Wall           Temperature (C)
+  IUOFFSTA I203                     UVIS Analog Signal Processing Chain Offset A              Voltage (V)
+   IUS2AHI I204                                             UVIS Serial 2 A High              Voltage (V)
+  IURGABLO I205                                           UVIS Reset Gate AB Low              Voltage (V)
+   IUSWCLO I206                                          UVIS Summing Well C Low              Voltage (V)
+   IUSWCHI I207                                         UVIS Summing Well C High              Voltage (V)
+  IURGABHI I208                                          UVIS Reset Gate AB High              Voltage (V)
+   IUSWALO I209                                          UVIS Summing Well A Low              Voltage (V)
+   IUSWAHI I210                                         UVIS Summing Well A High              Voltage (V)
+  IUOFFSTD I211                     UVIS Analog Signal Processing Chain Offset D              Voltage (V)
+   IUSWDLO I212                                          UVIS Summing Well D Low              Voltage (V)
+  IUOFFSTB I213                     UVIS Analog Signal Processing Chain Offset B              Voltage (V)
+  IUS1CDHI I214                                            UVIS Serial 1 CD High              Voltage (V)
+   IUASPCT I215              UVIS CCD Electronics Box ASPC Printed Wiring Board           Temperature (C)
+   IUS3DLO I216                                              UVIS Serial 3 D Low              Voltage (V)
+   IUS3DHI I217                                             UVIS Serial 3 D High              Voltage (V)
+   IUS2DLO I218                                              UVIS Serial 2 D Low              Voltage (V)
+   IUS2DHI I219                                             UVIS Serial 2 D High              Voltage (V)
+  IUCBTIMT I220            UVIS CCD Electronics Box Timing Printed Wiring Board           Temperature (C)
+  IUAS2P35 I221                UVIS Analog Signal Processing Chain Bias 2 +35VDC              Voltage (V)
+   IUAS2P5 I222                 UVIS Analog Signal Processing Chain Bias 2 +5VDC              Voltage (V)
+  IUAS2M15 I223                UVIS Analog Signal Processing Chain Bias 2 -15VDC              Voltage (V)
+  IUOFFSTC I224                     UVIS Analog Signal Processing Chain Offset C              Voltage (V)
+   IUS2BLO I225                                              UVIS Serial 2 B Low              Voltage (V)
+  IUTGABHI I226                                       UVIS Transfer Gate AB High              Voltage (V)
+  IUP3ABLO I227                                           UVIS Parallel 3 AB Low              Voltage (V)
+  IUP3ABHI I228                                          UVIS Parallel 3 AB High              Voltage (V)
+  IUP2ABLO I229                                           UVIS Parallel 2 AB Low              Voltage (V)
+  IUTGABLO I230                                        UVIS Transfer Gate AB Low              Voltage (V)
+  IUP2ABHI I231                                          UVIS Parallel 2 AB High              Voltage (V)
+  IUP1ABLO I232                                           UVIS Parallel 1 AB Low              Voltage (V)
+  IUP1ABHI I233                                          UVIS Parallel 1 AB High              Voltage (V)
+   IUS2ALO I234                                              UVIS Serial 2 A Low              Voltage (V)
+   IUS3BHI I235                                             UVIS Serial 3 B High              Voltage (V)
+   IUCK2P5 I236                                               UVIS Clock 2 +5VDC              Voltage (V)
+   IUS2BHI I237                                             UVIS Serial 2 B High              Voltage (V)
+  IUS1ABLO I238                                             UVIS Serial 1 AB Low              Voltage (V)
+  IUS1CDLO I239                                             UVIS Serial 1 CD Low              Voltage (V)
+  IUS1ABHI I240                                            UVIS Serial 1 AB High              Voltage (V)
+   IUSWBLO I241                                          UVIS Summing Well B Low              Voltage (V)
+   IUSWBHI I242                                         UVIS Summing Well B High              Voltage (V)
+   IUS3ALO I243                                              UVIS Serial 3 A Low              Voltage (V)
+   IUS3AHI I244                                             UVIS Serial 3 A High              Voltage (V)
+  IUCK2M15 I245                                              UVIS Clock 2 -15VDC              Voltage (V)
+   IUS3BLO I246                                              UVIS Serial 3 B Low              Voltage (V)
+   IUS2CLO I247                                              UVIS Serial 2 C Low              Voltage (V)
+  IUAS1P35 I248                UVIS Analog Signal Processing Chain Bias 1 +35VDC              Voltage (V)
+  IUCK1P15 I249                                              UVIS Clock 1 +15VDC              Voltage (V)
+  IUAS2P15 I250                 UVIS Analog Signal Processing Chain Bias 2 +15DC              Voltage (V)
+  IUP1CDLO I251                                           UVIS Parallel 1 CD Low              Voltage (V)
+  IUP1CDHI I252                                          UVIS Parallel 1 CD High              Voltage (V)
+   IUS3CLO I253                                              UVIS Serial 3 C Low              Voltage (V)
+  IUP3CDLO I254                                           UVIS Parallel 3 CD Low              Voltage (V)
+   IUCK1P5 I255                                               UVIS Clock 1 +5VDC              Voltage (V)
+ IUClock1T I256                          UVIS Clock 1 CCD Electronics Box Board           Temperature (C)
+  IUP3CDHI I257                                          UVIS Parallel 3 CD High              Voltage (V)
+  IUP2CDLO I258                                           UVIS Parallel 2 CD Low              Voltage (V)
+   IUOFDAB I259                                             UVIS Offset Drain AB              Voltage (V)
+   IUOFDCD I260                                             UVIS Offset Drain CD              Voltage (V)
+   IUSWDHI I261                                         UVIS Summing Well D High              Voltage (V)
+  IURGCDHI I262                                          UVIS Reset Gate CD High              Voltage (V)
+  IUP2CDHI I263                                          UVIS Parallel 2 CD High              Voltage (V)
+  IUCK1M15 I264                                              UVIS Clock 1 -15VDC              Voltage (V)
+   IUVDDCD I265                                                      UVIS Vdd CD              Voltage (V)
+  IUAS1P15 I266                UVIS Analog Signal Processing Chain Bias 1 +15VDC              Voltage (V)
+  IULGATCD I267                            UVIS CCD Electronics Box Last Gate CD              Voltage (V)
+  IUCK2P15 I268                                              UVIS Clock 2 +15VDC              Voltage (V)
+   IUS2CHI I269                                             UVIS Serial 2 C High              Voltage (V)
+  IUAS1M15 I270                UVIS Analog Signal Processing Chain Bias 1 -15VDC              Voltage (V)
+   IUAS1P5 I271                 UVIS Analog Signal Processing Chain Bias 1 +5VDC              Voltage (V)
+   IUS3CHI I272                                             UVIS Serial 3 C High              Voltage (V)
+   IUTG1P5 I273                                      UVIS Timing Generator 1 +5V              Voltage (V)
+  IURGCDLO I274                                           UVIS Reset Gate CD Low              Voltage (V)
+   IUVODCD I275                                           UVIS Voltage Out DI CD              Voltage (V)
+ IUClock2T I276                          UVIS Clock 2 CCD Electronics Box Board           Temperature (C)
+  IULGATAB I277                            UVIS CCD Electronics Box Last Gate AB              Voltage (V)
+   IUVODAB I278                                           UVIS Voltage Out DI AB              Voltage (V)
+   IUVDDAB I279                                                      UVIS Vdd AB              Voltage (V)
+   IUTG2P5 I280                                      UVIS Timing Generator 2 +5V              Voltage (V)
+  IUTGCDLO I281                                        UVIS Transfer Gate CD Low              Voltage (V)
+  IUTGCDHI I282                                       UVIS Transfer Gate CD High              Voltage (V)
+IClock2PWR I283                                          UVIS Clock Relay Side 2             Relay Status
+    ICEBET I284                              CCD Electronics Box (CEB) End Wall           Temperature (C)
+   ICEB35V I285                                              UVIS +35V Converter              Voltage (V)
+  ICEBM15V I286                                              UVIS -15V Converter              Voltage (V)
+   IENCEBT I287                       Enclosure Adjacent CCD Electronics Box +V2          Temperature (C)
+  IASP2PWR I288                 UVIS Analog Signal Processing Chain Side 2 Relay             Relay Status
+IClock1PWR I289                                          UVIS Clock Relay Side 1             Relay Status
+  ICEBP15V I290                                              UVIS +15V Converter              Voltage (V)
+    ICEB5V I291                                               UVIS +5V Converter                Power (W)
+  IASP1PWR I292                 UVIS Analog Signal Processing Chain Side 1 Relay             Relay Status
+    IDEBST I296                         IR Detector Electronics Board Side Wall           Temperature (C)
+  IDRIRCST I297                                    IR Radiator Condensor Saddle           Temperature (C)
+   IENDEBT I298                Enclosure Adjacent Detector Electronics Board -V2          Temperature (C)
+  IDEBM15V I299                     IR Detector Electronics Board -15V Converter              Voltage (V)
+    IDRIRT I300                           IR Detector Electronics Board Radiator          Temperature (C)
+    IDEBET I301                             Detector Electronics Board End Wall           Temperature (C)
+    IDEB5V I302                IR Detector Electronics Board +5V Converter Power              Voltage (V)
+   IDEB15V I303               IR Detector Electronics Board +15V Converter Power              Voltage (V)
+    IR3FB2 I304                                  IR Quadrants 3&4 Fixed Bias V 2              Voltage (V)
+  IRDACREF I305                   IR Analog-to-Digital Converter (ADC) Reference              Voltage (V)
+  IRBDACHI I306                   IR Analog-to-Digital Converter (ADC) Bias High              Voltage (V)
+  IR34OFST I307          IR Quadrants 3&4 Signal Processing Chain Offset Removal              Voltage (V)
+   IR1SM15 I308                                          IR Quadrants 1&2 -15VDC              Voltage (V)
+     IR3VB I309                                          IR Quadrants 3&4 V Bias              Voltage (V)
+  IRSPBTMP I310                          IR Signal Processing Board Temperature           Temperature (C)
+   IR1FM14 I311                                          IR Quadrants 1&2 -14VDC              Voltage (V)
+   IR1DP15 I312                            IR Quadrants 1&2 Detector Analog +15V              Voltage (V)
+  IR1REFP5 I313                                           IR Quadrants 1&2 +5VDC              Voltage (V)
+IR1ClockP5 I314                                IR Quadrant 1 Clock +5V Reference              Voltage (V)
+  IR1DGBP5 I315                                        IR Quadrant 1 Digital +5V              Voltage (V)
+   IR1SP15 I316                                          IR Quadrants 1&2 +15VDC              Voltage (V)
+  IR1ANBP5 I317                     IR Quadrants 1&2 ADC +5V Applied To Detector              Voltage (V)
+    IR3FB1 I318                                  IR Quadrants 3&4 Fixed Bias V 1              Voltage (V)
+   IR1FP14 I319                                          IR Quadrants 1&2 +14VDC              Voltage (V)
+  IR1DDP15 I320                              IR Quadrant 1 Detector Digital +15V              Voltage (V)
+    IR1GND I321                                          IR Quadrants 1&2 Ground              Voltage (V)
+     IR3M1 I322                                           IR Quadrants 3&4 -1VDC              Voltage (V)
+    IR1FB1 I323                                  IR Quadrants 1&2 Fixed Bias V 1              Voltage (V)
+    IR1FB2 I324                                  IR Quadrants 1&2 Fixed Bias V 2              Voltage (V)
+     IR1VB I325                                          IR Quadrants 1&2 V Bias              Voltage (V)
+     IR1M1 I326                                           IR Quadrants 1&2 -1VDC              Voltage (V)
+  IR12OFST I327          IR Quadrants 1&2 Signal Processing Chain Offset Removal              Voltage (V)
+  IR3ANBP5 I328                     IR Quadrants 3&4 ADC +5V Applied To Detector              Voltage (V)
+    IR1TMP I329                                           IR Quadrants 1&2 Board          Temperature (C)
+   IR3DP15 I330                            IR Quadrants 3&4 Detector Analog +15V              Voltage (V)
+   IR3SP15 I331                                          IR Quadrants 3&4 +15VDC              Voltage (V)
+  IRDACSPR I332                                                        Dac Spare                    Spare
+  IRA2DM12 I333                      IR Analog-to-Digital Converter (ADC) -12VDC              Voltage (V)
+  IRA2DP12 I334                      IR Analog-to-Digital Converter (ADC) +12VDC              Voltage (V)
+   IR3SM15 I335                                          IR Quadrants 3&4 -15VDC              Voltage (V)
+    IR3GND I336                                          IR Quadrants 3&4 Ground              Voltage (V)
+  IR3DDP15 I337                           IR Quadrants 3&4 Detector Digital +15V              Voltage (V)
+  IR3DGBP5 I338                                     IR Quadrants 3&4 Digital +5V              Voltage (V)
+    IR3TMP I339                                           IR Quadrants 3&4 Board          Temperature (C)
+   IR3FP14 I340                                          IR Quadrants 3&4 +14VDC              Voltage (V)
+  IR3REFP5 I341                                           IR Quadrants 3&4 +5VDC              Voltage (V)
+   IRANAP5 I342                                                  IR +5VDC Analog              Voltage (V)
+    IRDP15 I343                                               IR Detector +15VDC              Voltage (V)
+   IR1BUSY I344            IR Quadrant 1 Analog-to-Digital Converter Busy Status              Busy Status
+   IR3BUSY I345                                      IR Quadrants 3&4 ADC Status                   Status
+   IRDIGP5 I346                                                 IR +5VDC Digital              Voltage (V)
+  IRADOFST I347              IR Analog-to-Digital Converter (ADC) -2.5VDC Offset              Voltage (V)
+   IR3FM14 I348                                          IR Quadrants 3&4 -14VDC              Voltage (V)
+IR3ClockP5 I349                                IR Quadrant 3 Clock +5V Reference              Voltage (V)
+  IR1M15PW I350                                                 Relay_DEB_tlm_02             Relay Status
+  IR1P15PW I351                                                 Relay_DEB_tlm_01             Relay Status
+  IR3M15PW I352                                                 Relay_DEB_tlm_04             Relay Status
+  IR3P15PW I353                                                 Relay_DEB_tlm_03             Relay Status
+  IRPWRSTA I354                                  IR Control Section Power Status             Relay Status
+  IREXPTYP I355                                                 IR Exposure Type                        -
+  IRFIFPRC I356                                               IR Fifo Processing               Processing
+  IREXPSTA I357                               IR Control Section Exposure Status                        -
+  IRMONPIX I358                IR Monitor (Reference) Pixel Near Amp A (1, 1024)                       DN
+  IIRTPADS I359                              IR Timer Pointer A/D Inhibit Status                        -
+   ISHTECV I366                                  UVIS Shield TEC Voltage Monitor              Voltage (V)
+  ISHUTTMP I367                                              UVIS Shutter Motor           Temperature (C)
+   ISHSTAT I368                                    UVIS Shutter Mechanism Status                        -
+  ISHUTOHT I369                                            UVIS Shutter Overheat                        -
+  ISHCEBOC I370                                 UVIS Shutter CEB Shutter Command                        -
+  ISHCSOVR I371                    UVIS Shutter Control Section Shutter Override                        -
+  ISHRBPOS I372                                   UVIS Shutter Readback Position                 Position
+  ISHCOMCL I373                           UVIS Shutter Motor Communication C Low                        -
+  ISHAMPCT I374                                   UVIS Shutter Motor Amp Control                        -
+   ISHCOMM I375                                   UVIS Shutter Motor Commutation              Commutation
+   ISHCSOC I376                     UVIS Shutter Control Section Shutter Control                        -
+  ISHCOMAL I377                           UVIS Shutter Motor Communication A Low                        -
+   ISHENAB I378                                        UVIS Shutter Motor Enable                        -
+   ISHLTCH I379                                          UVIS Shutter Latch Used                        -
+  ISHUTOVR I380                                   UVIS Shutter Overheat Override                        -
+  ISHCOMBH I381                          UVIS Shutter Motor Communication B High                        -
+   ISHPLSB I382                    UVIS Shutter Prom Least Significant Bit (LSB)                        -
+  ISHCOMAH I383                          UVIS Shutter Motor Communication A High                        -
+  ISHCOMBL I384                           UVIS Shutter Motor Communication B Low                        -
+  ISHCOMCH I385                          UVIS Shutter Motor Communication C High                        -
+  ISHCMPOS I386                                    UVIS Shutter Command Position                 Position
+  IUINNTMP I388                                      UVIS Corrector Inner Motor           Temperature (C)
+  IUFOCTMP I389                                      UVIS Corrector Focus Motor           Temperature (C)
+  IUOUTSPD I391                                       UVIS Outer Corrector Speed                    Speed
+  IUFOCSPD I393                                       UVIS Focus Corrector Speed                    Speed
+  IUINNSPD I394                                       UVIS Inner Corrector Speed                    Speed
+  IUFOCHLD I395                                          UVIS Focus Hold Counter                   Counts
+  IUINNHLD I396                                          UVIS Inner Hold Counter                   Counts
+  IUCORSEL I397                                    UVIS Corrector Select Command                        -
+  IUINNOHT I398                                    UVIS Corrector Inner Overheat                        -
+  IRFOCDIR I399                                             IR Focus Stepmtr Dir                        -
+  IROUTDIR I400                                             IR Outer Stepmtr Dir                        -
+  IUINNDIR I401                    UVIS Corrector Inner Stepping Motor Direction                        -
+  IUOUTDIR I402                                           UVIS Outer Stepmtr Dir                        -
+  IUOUTOHT I403                                              UVIS Outer Overheat                        -
+  IUFOCDIR I404                              UVIS Focus Stepping Motor Direction                        -
+  IRINNDIR I405                                             IR Inner Stepmtr Dir                        -
+  IUOUTHLD I406                                          UVIS Outer Hold Counter                   Counts
+  IUFOCSTA I408                                      UVIS Corrector Focus Status                        -
+  IUINNSTA I409                                      UVIS Corrector Inner Status                        -
+  IUOUTSTA I410                                      UVIS Corrector Outer Status                        -
+  IUINNOVR I411                           UVIS Corrector Inner Overheat Override                        -
+  IUOUTOVR I412                                            UVIS Out Ovrht Ovrrde                        -
+  IUFOCOHT I413                                              UVIS Focus Overheat                        -
+  IUFOCOVR I414                                     UVIS Focus Overheat Override                        -
+  IUFOCINI I415                                      UVIS Focus Corrector Status                        -
+  IUOUTINI I416                                      UVIS Outer Corrector Status                        -
+  IUINNINI I417                            UVIS Corrector Inner Corrector Status                        -
+  IUFOCRLY I418 UVIS Focus Linear Variable Differential Transformer (LVDT) Relay                        -
+  IUOUTRES I419                                              UVIS Outer Resolver                 Position
+  IUFOCLVT I420       UVIS Focus Linear Variable Differential Transformer (LVDT)         Raw LVDT Reading
+  IUINNRES I421                                              UVIS Inner Resolver                 Position
+  IUOUTCOM I422                                        UVIS Outer Corrector Comm                        -
+  IUFOCCOM I423                                 UVIS Focus Corrector Commutation                        -
+  IUINNCOM I424                                 UVIS Corrector Inner Commutation                        -
+    IRRCPT I431                                    IR Refractive Corrector Plate          Temperature (C)
+  IOBIRFMT I432                                                  IR Fold Mirror           Temperature (C)
+  IOBIRM1T I433                                              IR M1 Mirror Mount           Temperature (C)
+  IRFOCHLD I434                                            IR Focus Hold Counter                   Counts
+  IROUTHLD I435                                            IR Outer Hold Counter                   Counts
+  IRINNHLD I436                                            IR Inner Hold Counter                   Counts
+  IRFOCSPD I437                                         IR Focus Corrector Speed                    Speed
+  IROUTSPD I438                                         IR Outer Corrector Speed                    Speed
+  IRINNSPD I439                                         IR Inner Corrector Speed                    Speed
+  IRINNOHT I440                                                IR Inner Overheat                        -
+  IROUTOHT I444                                                IR Outer Overheat                        -
+  IRINNOVR I445                                              IR Inn Ovrht Ovrrde                        -
+  IRINNSTA I446                                        IR Corrector Inner Status                        -
+  IROUTSTA I447                                        IR Corrector Outer Status                        -
+  IROUTOVR I448                                              IR Out Ovrht Ovrrde                        -
+  IRFOCSTA I449                                        IR Corrector Focus Status                        -
+  IRFOCOHT I450                                                 IR Focus Ovrheat                        -
+  IRFOCOVR I451                                               IR Foc Ovrht Ovrde                        -
+  ISFEXSPD I452                  SOFA Additional FSW Bit (see notes in workbook)                    Speed
+  IRINNINI I453                                        IR Inner Corrector Status                        -
+  IROUTINI I454                                        IR Outer Corrector Status                        -
+  IRFOCINI I455                                        IR Focus Corrector Status                        -
+  IRFOCRLY I456                                              IR Focus Lvdt Relay                        -
+  IRFOCLVT I457         IR Focus Linear Variable Differential Transformer (LVDT)                 Position
+  IROUTRES I458                                                IR Outer Resolver                 Position
+  IRINNRES I459                                               IR Inner Resolver                  Position
+  IRINNCOM I460                                          IR Inner Corrector Comm                        -
+  IROUTCOM I461                                          IR Outer Corrector Comm                        -
+  IRFOCCOM I462                                          IR Focus Corrector Comm                        -
+    IFSMBI I471                  Filter Select Mechanism (FSM) Motor Current B I              Current (A)
+    IFSMAI I472                  Filter Select Mechanism (FSM) Motor Current A I              Current (A)
+  IFSMMECT I473                           Filter Select Mechanism (FSM) Housing           Temperature (C)
+  IRFOCTMP I474                                        IR Corrector Focus Motor           Temperature (C)
+  IRFOCPOS I475                                      IR Focus Mechanism Position                 Position
+  IFSMINRS I476                   Filter Select Mechanism (FSM)  Inhibit Resolvr                        -
+   IFSMOHT I477                          Filter Select Mechanism (FSM)  Overheat                        -
+   IFSMSPD I478                   Filter Select Mechanism (FSM)  Commanded Speed                    Speed
+   IFSMRLY I479                      Filter Select Mechanism (FSM)  Relay Status                        -
+   IFSMHLD I480                  Filter Select Mechanism (FSM) Commanded Holdoff                  Holdoff
+   IFSMOVR I482                   Filter Select Mechanism (FSM)  Overht Override                        -
+   IFSMMOT I483                      Filter Select Mechanism (FSM)  Motor Moving                        -
+  IMINTSTA I484                                             Memory Monitor 5 & 6                        -
+  ICORINRS I485                                       Corrector Inhibit Resolver                        -
+  IFSMFILT I486      Flight Software Reprt Filter Select Mechanism (FSM)  Filter                        -
+  IFSMINIT I487                       Filter Select Mechanism (FSM)  Init Status                        -
+  IFSMRPOS I488                  Filter Select Mechanism (FSM) Resolver Position                 Position
+  IFSMCOMM I489                   Filter Select Mechanism (FSM)  Mtr Commutation                        -
+   IFSMDIR I490                    Filter Select Mechanism (FSM)  Step Motor Dir                        -
+   ICSMDIR I491             Channel Select Mechanism (CSM)  Step Motor Direction                        -
+   ISHMTRI I511                                       UVIS Shutter Motor Current              Current (A)
+  IUVCONDT I512                                         UVIS Condensor Radiator           Temperature (C)
+  ICALCVRT I521                                           Calibration Box Cover           Temperature (C)
+  IENBY2FT I522                                    WFC3 Enclosure Bay 2 Forward           Temperature (C)
+  IUVEVAPT I523                                                 UVIS Evaporator           Temperature (C)
+  I10VREF1 I524          Support Electronics Section ADC +10V Reference (Side 1)              Voltage (V)
+  IPOMARMT I525                                Optical Bench Pickoff Mirror Arm           Temperature (C)
+   IFSMTMP I526                             Filter Select Mechanism (FSM) Motor           Temperature (C)
+   IENBOTT I527                                    WFC3 Enclosure Bottom Center           Temperature (C)
+  IUOUTTMP I528                                      UVIS Corrector Outer Motor           Temperature (C)
+   IERBOTT I529                                     Electronics Radiator Bottom           Temperature (C)
+  IENBY1FT I530                                    WFC3 Enclosure Bay 1 Forward           Temperature (C)
+   IENPOMT I531                                      Pickoff Mirror at Enclosure          Temperature (C)
+  I10VREF2 I532                   Support Electronics Section ADC +10V Reference              Voltage (V)
+   IOBTOPT I533                                         Optical Bench Top Cover           Temperature (C)
+     ICL5V I536                                       +5V Calibration Lamp Power              Voltage (V)
+    ITLMPT I537                                              UVIS Tungsten Lamp           Temperature (C)
+  ID2LAMPI I538                                           Deuterium Lamp Current              Current (A)
+  ITLMPSEL I539                                     Tungsten Lamp Relay Position             Relay Status
+    ICSMAI I540                 Channel Select Mechanism (CSM) Motor Current A I              Current (A)
+  ITLMP12I I541                                   Tungsten Lamps 1 and 2 Current              Current (A)
+    ICSMBI I542                 Channel Select Mechanism (CSM) Motor Current B I              Current (A)
+  ITCALPLT I543                              IR Calibration Plate Tungsten Lamp           Temperature (C)
+    ICL15V I544                                      +15V Calibration Lamp Power              Voltage (V)
+  ITLMP34I I545                                   Tungsten Lamps 3 and 4 Current              Current (A)
+  ICALBOXT I546                           Calibration Box Printed Circuit Board           Temperature (C)
+   ID2LMPT I547                                                  Deuterium Lamp           Temperature (C)
+   IHWRST2 I566                            Hardware Reset Flag Control Section 2                        -
+   IOBSNUM I567                                               Observation Number                   Number
+  ISDRESTR I568                                      Science Data Buffer Restore                        -
+  ICSMEM12 I569                                Control Section Memory Monitor 12          Memory Contents
+  ICSMEM08 I570                                 Control Section Memory Monitor 8          Memory Contents
+  ICSMEM09 I571                                 Control Section Memory Monitor 9          Memory Contents
+  ICSMEM11 I572                                Control Section Memory Monitor 11          Memory Contents
+  ICSMEM07 I573                                 Control Section Memory Monitor 7          Memory Contents
+  ICSMEM10 I574                                Control Section Memory Monitor 10          Memory Contents
+  IDIGDIAG I575                                             Digital Diag Coll On                        -
+  IMACINHB I576                                         Macro Processing Inhibit                        -
+  ISESDATA I577                                              SES Data FIFO Empty                        -
+  ISESEMPT I578                                           SES Address FIFO Empty                        -
+  ISESFULL I579                                            SES Address FIFO Full                        -
+  ICSMEM06 I580                                 Control Section Memory Monitor 6          Memory Contents
+  IDMPSTAT I581                                                      Dump Status                        -
+  IDMPWAIT I582                                                   Dump Wait Time                Wait Time
+   IHDRCNT I583                                                   Header Counter                   Counts
+   IIMGCNT I584                                                    Image Counter                   Counts
+  INUMLINE I587                     Number Of Science Data Formatter (SDF) Lines                    Lines
+   ISESINT I588                                      SES Hardware Data Interrupt                        -
+  ISDFFIFO I589                          Science Data Formatter FIFO Flag Status                        -
+  IMAJFCNT I590                                              Major Frame Counter                   Counts
+  INEDCOLL I591                               Normal Engineering Data Collection                        -
+   IERRCNT I592                                    Flight Software Error Counter                   Counts
+  IBKGDMON I593                                               Background Monitor                        -
+  ILSTCKSM I594                                           Last Computed Checksum                 Checksum
+  INRCMDAC I595                                 Normal Commands Accepted Counter                   Counts
+  ILASTNRM I596                                              Last Normal Command                  Command
+  INRCMDPC I597                                Normal Commands Processed Counter                   Counts
+  ICMDATAC I598                                    Command Data Accepted Counter                   Counts
+  IMINFCNT I599                                              Minor Frame Counter                   Counts
+  IBUSWAIT I600                                                   Bus Wait State                        -
+  IIMCMDPC I601                           Intermediate Command Processed Counter                   Counts
+  ILIMCKEN I602                                        Limit Check Enable Status                        -
+  IIMCMDAC I603                            Intermediate Command Accepted Counter                   Counts
+  ILASTIMM I604                                           Last Immediate Command                  Command
+  ICMDFIFO I605                                              Command FIFO Status                        -
+   IDATQUE I606                                             Parameter Data Queue               Data Queue
+   INRMQUE I607                                       Normal Command Queue Depth                    Depth
+  IDOGTIME I608                                            Watchdog Timer Status                        -
+  IELOGIND I609                                                  Error Log Index                    Index
+  IELOGMSG I610                                                Error Log Message                  Message
+  IELOGNUM I611                                                 Error Log Number              Error Value
+  IELOGWRP I612                                             Error Log Wraparound                        -
+  ILOOPCNT I613                                                     Loop Counter                   Counts
+ IINPClock I614                                                Timer Input Clock                        -
+  ITIMGAT0 I615                                            External Timer Gate 0                   Status
+   IHWRST1 I616                            Hardware Reset Flag Control Section 1                        -
+  ITIMGAT1 I617                                            External Timer Gate 1                   Status
+  ITIMGAT2 I618                                            External Timer Gate 2                   Status
+   ICHKSUM I619                                             Checksum In Progress                        -
+  ICSMEM01 I620                                 Control Section Memory Monitor 1          Memory Contents
+  ICSMEM02 I621                                 Control Section Memory Monitor 2          Memory Contents
+  ICSMEM03 I622                                 Control Section Memory Monitor 3          Memory Contents
+  ICSMEM04 I623                                 Control Section Memory Monitor 4          Memory Contents
+  ICSMEM05 I624                                 Control Section Memory Monitor 5          Memory Contents
+  IBANKNUM I625                                       Memory Monitor Bank Number       Memory Bank Number
+  ITIMECOD I628                                            Time Code Update Flag                        -
+   ITCUERR I629                                           Time Code Update Error                        -
+   IDUMPTO I630                                          Dump Time Out Indicator                        -
+  IUHDALLO I631                                           UVIS Header Allocation                        -
+  IBKMDCRC I632                                             Bckgrd Mode Crc Flag                        -
+  IBKMSTCK I633                                             Bckgd Mon Stk Chkflg                        -
+  ITDFRESP I634                                          Take Data Flag Response                        -
+  ISLFTEST I635                                           Self Test Process Flag                        -
+      ITDF I636                                                   Take Data Flag                        -
+     IWAIT I637                                               Wait Mar Proc Flag                        -
+   IFSWVER I638                                   Flight Software Version Number                  Version
+  INULLIMG I639                                               Null Image Counter                   Counts
+  IIMGDMPD I640                                             Image Insert Pointer                  Pointer
+  ITESTRES I641                                                 Self Test Result                        -
+   ICSPAGE I642                                 Control Section Page Paging Flag                        -
+   IUVADCS I643                                            UVIS A/d Collctn Stat                        -
+  ISESADCS I644                                        SES A/D Collection Status                        -
+   IIRADCS I645                           IR Analog-To-Digital Collection Status                        -
+   IIRDATA I646                                               IR Data FIFO Empty                        -
+   IUVDATA I647                                             UVIS Data Fifo Empty                        -
+  INEDSTAT I648         Normal Engineering Data Collection Code Execution Status                        -
+  IDERDIAG I649                                              Det Words Remaining                        -
+  IALGDIAG I650                                              Analog Diag Collect                        -
+  IUVISINT I651                                            UVIS Hwed Data Intrpt                        -
+   IIRFULL I652                                             IR Address FIFO Full                        -
+   IUVEMPT I653                                            UVIS Addrs Fifo Empty                        -
+    IIRINT I654                                       IR Hardware Data Interrupt                        -
+   IUVFULL I655                                            UVIS Addrss Fifo Full                        -
+   IIREMPT I656                                            IR Address FIFO Empty                        -
+  IDLAMPEN I657                               Deuterium Lamp Enable Relay Status             Relay Status
+   ITL34EN I658                                   Tungsten Lamp Bulbs 3/4 Enable             Relay Status
+  IDLMPCUR I659                                           Deuterium Lamp Current             Relay Status
+   ITL12EN I660                                   Tungsten Lamp Bulbs 1/2 Enable             Relay Status
+  ISHSWSTA I661                                     UVIS Shutter Software Status                        -
+  IUNDBSEL I662                                    UVIS Exposure Type NDB Select                        -
+  IUPWRSTA I663                                UVIS Control Section Power Status                        -
+  IUFIFPRC I664                        UVIS First-In-First-Out (FIFO) Processing                     FIFO
+  IUCMDREJ I665                                   UVIS Commands Rejected Counter                   Counts
+  IUEXPTYP I667                                               UVIS Exposure Type                        -
+  IUBLKPRC I668                                           UVIS Blocks To Process                   Blocks
+  IUEXPSTA I669                                             UVIS Exposure Status                        -
+  IDRTSCST I670                Detector Radiator Thermal Shelf Condenser Saddle           Temperature (C)
+  IICMDREJ I671                                     IR Commands Rejected Counter                   Counts
+   ITLAMP1 I672                                           Tungsten Lamp 1 Status             Relay Status
+   ITLAMP4 I673                                           Tungsten Lamp 4 Status             Relay Status
+   ITLAMP3 I674                                           Tungsten Lamp 3 Status             Relay Status
+   ITLAMP2 I675                                           Tungsten Lamp 2 Status             Relay Status
+   IDLAMPI I676                                       Deuterium Lamp Current Cur             Relay Status
+    IDLAMP I677                                      Deuterium Lamp Relay Status             Relay Status
+  IUINJECT I678                                       UVIS Charge Injection Type                        -
+   IENTOPT I686                                        WFC3 Enclosure Top Plate           Temperature (C)
+   IENAFTT I687                                        WFC3 Enclosure Panel Aft           Temperature (C)
+   IREVAPT I688                            IR TECFIRE (DB) Heat Pipe Evaporator           Temperature (C)
+  IRINNTMP I689                                        IR Corrector Inner Motor           Temperature (C)
+  IROUTTMP I690                                        IR Corrector Outer Motor           Temperature (C)
+  IRENEVPT I691                            IR TECFIRE (CE) Heat Pipe Evaporator           Temperature (C)
+  IRFPATMP I692                                     IR Detector Monitored by SES          Temperature (C)
+   IVCHPRT I706                  Variable Conductance Heat Pipe (VCHP) Radiator           Temperature (C)
+  IOBCPHT1 I707                         Optical Bench Cold Plate Heater (Side 1)          Temperature (C)
+  IOBCPHT2 I708                                 Optical Bench Cold Plate Heater           Temperature (C)
+    IFITCT I709                                                   WFC3 C Fitting          Temperature (C)
+    IFITBT I710                                                   WFC3 B Fitting          Temperature (C)
+    IFITAT I711                                                   WFC3 A Fitting          Temperature (C)
+  ICPCONDT I712                              Optical Bench Cold Plate Condensor           Temperature (C)
+  ICPLATET I713                                        Optical Bench Cold Plate           Temperature (C)
+  ISOFATMP I714         UVIS Selectable Optics Filter Assembly (SOFA) Mechanism           Temperature (C)
+    IOBCET I726                                    Optical Bench Cold Enclosure           Temperature (C)
+  IOBRPHP1 I727               Optical Bench Radiator Plate Heater Power (Side 1)                Power (W)
+  IOBRPHP2 I728                        Optical Bench Radiator Plate Heater Power                Power (W)
+    ISOFAI I729           Selectable Optics Filter Assembly (SOFA) Motor Current              Current (A)
+  ISFAHS06 I730                                             SOFA Homesensor Fw06                        -
+  ISFAHD08 I731                                     SOFA Filter Wheel 08 Holdoff                  Holdoff
+  ISFAHS05 I732                                             SOFA Homesensor Fw05                        -
+  ISFAOP10 I733                                             Filt In Optpath Fw10                        -
+  ISFAPO02 I734                                    SOFA Filter Wheel Position 02                 Position
+  ISFAHD06 I735                                     SOFA Filter Wheel 06 Holdoff                  Holdoff
+  ISFASP08 I736                                       SOFA Filter Wheel 08 Speed                    Speed
+  ISFASP03 I737                                       SOFA Filter Wheel 03 Speed                    Speed
+  ISFAHS01 I738                                             SOFA Homesensor Fw01                        -
+  ISFASP12 I739                                       SOFA Filter Wheel 12 Speed                    Speed
+  ISFASP10 I740                                       SOFA Filter Wheel 10 Speed                    Speed
+  ISFASP09 I741                                       SOFA Filter Wheel 09 Speed                    Speed
+  ISFAST12 I742                                                SOFA Fw 12 Status                        -
+  ISFAPO01 I743                                    SOFA Filter Wheel Position 01                 Position
+  ISFAHD05 I744                                     SOFA Filter Wheel 05 Holdoff                  Holdoff
+  ISFASP07 I745                                       SOFA Filter Wheel 07 Speed                    Speed
+  ISFAHS02 I746                                             SOFA Homesensor Fw02                        -
+  ISFASP06 I747                                       SOFA Filter Wheel 06 Speed                    Speed
+  ISFAHD07 I748                                     SOFA Filter Wheel 07 Holdoff                  Holdoff
+  ISFASP04 I749                                       SOFA Filter Wheel 04 Speed                    Speed
+  ISFASP11 I750                                       SOFA Filter Wheel 11 Speed                    Speed
+  ISFASP02 I751                                       SOFA Filter Wheel 02 Speed                    Speed
+  ISFASP01 I752                                       SOFA Filter Wheel 01 Speed                    Speed
+  ISFAOP12 I753                                             Filt In Optpath Fw12                        -
+  ISFAOP11 I754                                             Filt In Optpath Fw11                        -
+  ISFAHD12 I755                                     SOFA Filter Wheel 12 Holdoff                  Holdoff
+  ISFAHD11 I756                                     SOFA Filter Wheel 11 Holdoff                  Holdoff
+  ISFAHD10 I757                                     SOFA Filter Wheel 10 Holdoff                  Holdoff
+  ISFAHD09 I758                                     SOFA Filter Wheel 09 Holdoff                  Holdoff
+  ISFAHS03 I759                                             SOFA Homesensor Fw03                        -
+  ISFAHS04 I760                                             SOFA Homesensor Fw04                        -
+  ISFASP05 I761                                       SOFA Filter Wheel 05 Speed                    Speed
+  ISFAPO11 I762                                    SOFA Filter Wheel Position 11                 Position
+  ISFAPO12 I763                                    SOFA Filter Wheel Position 12                 Position
+  ISFAHD04 I764                                     SOFA Filter Wheel 04 Holdoff                  Holdoff
+  ISFAOP03 I765                                             Filt In Optpath Fw03                        -
+  ISFAPO04 I766                                    SOFA Filter Wheel Position 04                 Position
+  ISFAPO07 I767                                    SOFA Filter Wheel Position 07                 Position
+  ISFAPO08 I768                                    SOFA Filter Wheel Position 08                 Position
+  ISFAOP09 I769                                             Filt In Optpath Fw09                        -
+  ISFAPO10 I770                                    SOFA Filter Wheel Position 10                 Position
+  ISFAPO06 I771                                    SOFA Filter Wheel Position 06                 Position
+  ISFAST01 I772                                                SOFA Fw 01 Status                        -
+  ISFAOP04 I773                                             Filt In Optpath Fw04                        -
+  ISFAOP01 I774                                             Filt In Optpath Fw01                        -
+  ISFAOP08 I775                                             Filt In Optpath Fw08                        -
+  ISFAOP07 I776                                             Filt In Optpath Fw07                        -
+  ISFAOP06 I777                                             Filt In Optpath Fw06                        -
+  ISFAOP05 I778                                             Filt In Optpath Fw05                        -
+  ISFAPO09 I779                                    SOFA Filter Wheel Position 09                 Position
+  ISFAST10 I780                                                SOFA Fw 10 Status                        -
+  ISFAHD03 I781                                     SOFA Filter Wheel 03 Holdoff                  Holdoff
+  ISFAHD02 I782                                     SOFA Filter Wheel 02 Holdoff                  Holdoff
+  ISFAPO03 I783                                    SOFA Filter Wheel Position 03                 Position
+  ISFAHD01 I784                                     SOFA Filter Wheel 01 Holdoff                  Holdoff
+  ISFAOP02 I785                                             Filt In Optpath Fw02                        -
+  ISFAHS07 I786                                             SOFA Homesensor Fw07                        -
+  ISFAPO05 I787                                    SOFA Filter Wheel Position 05                 Position
+  ISFAST02 I788                                                SOFA Fw 02 Status                        -
+  ISFAST09 I789                                                SOFA Fw 09 Status                        -
+  ISFAST08 I790                                                SOFA Fw 08 Status                        -
+  ISFAST07 I791                                                SOFA Fw 07 Status                        -
+  ISFAST06 I792                                                SOFA Fw 06 Status                        -
+  ISFAST05 I793                                                SOFA Fw 05 Status                        -
+  ISFAST04 I794                                                SOFA Fw 04 Status                        -
+  ISFAST03 I795                                                SOFA Fw 03 Status                        -
+  ISFAST11 I796                                                SOFA Fw 11 Status                        -
+  ISOFASEL I797                                         Select SOFA MEB Readback                        -
+  ISFA30V2 I798                                             SOFA 30V Relay Strg2                        -
+  ISFA30V1 I799                                             SOFA 30V Relay Strg1                        -
+  ISFA5VR2 I800                                             SOFA 5V Relay Strng2                        -
+  ISFA5VR1 I801                                             SOFA 5V Relay Strng1                        -
+  ISFAHS12 I802                                             SOFA Homesensor Fw12                        -
+  ISFAHS11 I803                                             SOFA Homesensor Fw11                        -
+  ISFAHS08 I804                                             SOFA Homesensor Fw08                        -
+  ISFAHS09 I805                                             SOFA Homesensor Fw09                        -
+  ISFAHS10 I806                                             SOFA Homesensor Fw10                        -
+  ISFAIS12 I807                                              SOFA Init Status 12                        -
+  ISFAIS10 I808                                              SOFA Init Status 10                        -
+  ISFAHI03 I809                                             SOFA Home Init St 03                        -
+  ISFAIS03 I810                                              SOFA Init Status 03                        -
+  ISFAIS11 I811                                              SOFA Init Status 11                        -
+  ISFAIS04 I812                                              SOFA Init Status 04                        -
+  ISFAHI02 I813                                             SOFA Home Init St 02                        -
+  ISFAIS02 I814                                              SOFA Init Status 02                        -
+  ISFAMC06 I815                           SOFA Filter Wheel 06 Motor Commutation              Commutation
+  ISFAHI12 I816                                             SOFA Home Init St 12                        -
+  ISFAMC07 I817                           SOFA Filter Wheel 07 Motor Commutation              Commutation
+  ISFAMC08 I818                           SOFA Filter Wheel 08 Motor Commutation              Commutation
+  ISFAMC09 I819                           SOFA Filter Wheel 09 Motor Commutation              Commutation
+  ISFAHI01 I820                                             SOFA Home Init St 01                        -
+  ISFAMC10 I821                           SOFA Filter Wheel 10 Motor Commutation              Commutation
+  ISFAMC11 I822                           SOFA Filter Wheel 11 Motor Commutation              Commutation
+  ISFAMC12 I823                           SOFA Filter Wheel 12 Motor Commutation              Commutation
+  ISFAMC05 I824                           SOFA Filter Wheel 05 Motor Commutation              Commutation
+  ISFAHI10 I825                                             SOFA Home Init St 10                        -
+  ISFAIS09 I826                                              SOFA Init Status 09                        -
+  ISFAHI05 I827                                             SOFA Home Init St 05                        -
+  ISFAHI06 I828                                             SOFA Home Init St 06                        -
+  ISFAHI07 I829                                             SOFA Home Init St 07                        -
+  ISFAHI08 I830                                             SOFA Home Init St 08                        -
+  ISFAIS08 I831                                              SOFA Init Status 08                        -
+  ISFAIS01 I832                                              SOFA Init Status 01                        -
+  ISFAHI09 I833                                             SOFA Home Init St 09                        -
+  ISFAMC01 I834                           SOFA Filter Wheel 01 Motor Commutation              Commutation
+  ISFAMC02 I835                           SOFA Filter Wheel 02 Motor Commutation              Commutation
+  ISFAMC03 I836                           SOFA Filter Wheel 03 Motor Commutation              Commutation
+  ISFAIS06 I837                                              SOFA Init Status 06                        -
+  ISFAHI11 I838                                             SOFA Home Init St 11                        -
+  ISFAIS07 I839                                              SOFA Init Status 07                        -
+  ISFAMC04 I840                           SOFA Filter Wheel 04 Motor Commutation              Commutation
+  ISFAHI04 I841                                             SOFA Home Init St 04                        -
+  ISFAIS05 I842                                              SOFA Init Status 05                        -
+  IOBHTRP1 I843                              Optical Bench Heater Power (Side 1)                Power (W)
+  IOBHTRP2 I844                                       Optical Bench Heater Power                Power (W)
+    IHC15V I861                                  Heater Control +15VDC Regulator              Voltage (V)
+   ICSMTMP I862                            Channel Select Mechanism (CSM) Motor           Temperature (C)
+  ICSMOTVL I863                  Channel Select Mechanism (CSM)  Overtravel Stat                        -
+   ICSMOVR I864                Channel Select Mechanism (CSM)  Overheat Override                        -
+   ICSMRLY I865                     Channel Select Mechanism (CSM)  Relay Status                        -
+   ICSMMOT I866                     Channel Select Mechanism (CSM)  Motor Moving                        -
+  ICSMINRS I867                 Channel Select Mechanism (CSM)  Inhibit Resolver                        -
+   ICSMOHT I868                  Channel Select Mechanism (CSM)  Overheat Status                        -
+  ICSMSTAT I869                 Channel Select Mechanism (CSM)  Mechanism Status                        -
+   ICSMHLD I871                 Channel Select Mechanism (CSM) Commanded Holdoff                  Holdoff
+  IMECHSEL I872                                               Mechanism Selected                        -
+  IFSMSTAT I873                  Filter Select Mechanism (FSM)  Mechanism Status                        -
+   ICSMSPD I874                  Channel Select Mechanism (CSM)  Commanded Speed                    Speed
+  ICSMCHAN I875   Channel Select Mechanism (CSM)  Channel Flight Software Report                        -
+  ICSMRPOS I876                Channel Select Mechanism (CSM)  Resolver Position                    Steps
+  ICSMINIT I877                      Channel Select Mechanism (CSM)  Init Status                        -
+  ICSMCOMM I878                Channel Select Mechanism (CSM)  Motor Commutation                        -
+  IFSMMSTP I879                        Filter Select Mechanism (FSM)  Motor Step                    Steps
+  ICSMMSTP I880                       Channel Select Mechanism (CSM)  Motor Step                    Steps
+    IDRUVT I961                                                   UVIS Radiator           Temperature (C)
+   IVHTRP1 I962             Variable Conductance Heat Pipe Heater Power (Side 1)                Power (W)
+   IVHTRP2 I963                      Variable Conductance Heat Pipe Heater Power                Power (W)
+  IDRTECHT I971                                                      IR TEC Hot           Temperature (C)
+  IUSHSET1 I972                                   UVIS Shield Current Setpoint 1     Setpoint Current (A)
+  IDBTECP1 I973     IR Detector Base Thermo-Electric Cooler Power Relay (Side 1)             Relay Status
+  IDBTECP2 I974     IR Detector Base Thermo-Electric Cooler Power Relay (Side 2)             Relay Status
+  IRCETECV I975                 IR Cold Enclosure Thermo-Electric Cooler Voltage              Voltage (V)
+   ISHTERR I976                  UVIS Shutter Actual to Commanded Position Error                  Degrees
+   IUVTECV I977              UVIS 4-Stage Thermo-Electric Cooler Voltage Monitor              Voltage (V)
+  IRDBTECV I978                     IR Detector Baseplate Thermo-Electric Cooler              Voltage (V)
+   IR6TECV I979                        IR 6-Stage Thermo-Electric Cooler Voltage              Voltage (V)
+  IOBUVM2T I996                                                  UVIS M2 Mirror           Temperature (C)
+  IDCALPLT I997                                  Deuterium Calibration Platform           Temperature (C)
+  ICBVHTP1 I998                            Cold Bench VCHP Heater Power (Side 1)                Power (W)
+  ICBVHTP2 I999                                     Cold Bench VCHP Heater Power                Power (W)
