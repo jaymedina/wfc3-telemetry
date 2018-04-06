@@ -21,10 +21,10 @@ Use
     --t [Required]: The name of the table containing the MJDs of interest. This table should
                     take the form:
                     
-                    mjd param
-                    55555.1 23
-                    55556.5 24.5
-                    55560 -17.22
+                    mjd,param
+                    55560,-17.22
+                    55555.1,23
+                    55556.5,24.5
                     
                     If only the mjd column is included, the only output that is created is
                     telemetry_table.txt.
