@@ -1,4 +1,4 @@
-# wfc3-telemetry README
+# wfc3-telemetry
 
 Searches for telemetry correlations with all HST telemetry paramters.
 
@@ -24,7 +24,7 @@ Use
                     mjd param
                     55555.1 23
                     55556.5 24.5
-                    55560   -17.22
+                    55560 -17.22
                     
                     If only the mjd column is included, the only output that is created is
                     telemetry_table.txt.
