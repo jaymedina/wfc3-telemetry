@@ -7,7 +7,7 @@ table containing both the MJDs and the parameter of interest tied to those MJDs 
 the 'Use' section below):
 
 1. telemetry_table.txt : table showing the values of all HST telemetry parameters at the
-                         given MJDs.
+                         given MJDs
 2. correlations.txt : the ranked telemetry correlations with the user-defined parameter
 3. correlation_matrix.png : correlation matrix of the top telemetry correlations from
                             correlations.txt
