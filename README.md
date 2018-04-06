@@ -1,4 +1,4 @@
-# wfc3-telemetry
+# wfc3-telemetry README
 
 Searches for telemetry correlations with all HST telemetry paramters.
 
@@ -11,10 +11,6 @@ the 'Use' section below):
 2. correlations.txt : the ranked telemetry correlations with the user-defined parameter
 3. correlation_matrix.png : correlation matrix of the top telemetry correlations from
                             correlations.txt
-
-Authors
--------
-    Ben Sunnquist, 2018
     
 Use
 ---
