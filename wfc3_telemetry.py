@@ -269,7 +269,7 @@ def get_telemetry(t):
     t = pd.read_csv(t)
 
     # Get paths to all HST telemetry parameters
-    hst_telemetry_files = glob.glob('/grp/hst/telemetry/I*')
+    hst_telemetry_files = glob.glob('/grp/hst/wfc3t/wfc3_telemetry/I*')
 
     for i,f in enumerate(hst_telemetry_files):
         # Read in the telemetry parameter data
